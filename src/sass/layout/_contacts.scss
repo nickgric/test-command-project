@@ -1,0 +1,345 @@
+.section__crawlers {
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff 24%,
+    var(--secondary-accent-color) 24%,
+    var(--secondary-accent-color) 100%
+  );
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.container__crawlers {
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+}
+
+.crawlers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.crawlers__item {
+  display: block;
+  padding: 40px 32px;
+  background: var(--main-accent-color);
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+}
+
+.crawlers__agency {
+  margin-bottom: 32px;
+  display: inline-block;
+  text-align: center;
+  width: 73px;
+  font-family: var(--secondary-font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 186%;
+  color: var(--main-accent-color);
+  background: var(--fifth-accent-color);
+  border-radius: 6px;
+}
+
+.crawlers__agency-another-background {
+  width: 138px;
+  background: var(--sixth-accent-color);
+}
+
+.crawlers__city {
+  margin-bottom: 8px;
+  font-family: var(--secondary-font-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+}
+
+.crawlers__text {
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+  font-family: var(--secondary-font-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #907e82;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.crawlers__timetable {
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.timetable__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.timetable__day {
+  font-family: var(--secondary-font-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+}
+
+.timetable__time {
+  font-family: var(--secondary-font-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  color: var(--third-accent-color);
+}
+
+.contacts__link {
+  font-family: var(--secondary-font-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #907e82;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--fourth-accent-color);
+  }
+}
+
+.crawlers__list-modal-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.crawlers__modal-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  border-radius: 22px;
+  border: none;
+  min-width: 161px;
+  height: 44px;
+  cursor: pointer;
+}
+
+.crawlers__modal-btn_background-red {
+  background: var(--fourth-accent-color);
+  color: var(--main-accent-color);
+  padding-left: 17px;
+  padding-right: 17px;
+
+  &:hover,
+  &:focus {
+    background-color: var(--btn-hover-focus);
+    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.crawlers__modal-btn_background-white {
+  background: var(--main-accent-color);
+  color: var(--fourth-accent-color);
+  padding-left: 32px;
+  padding-right: 32px;
+
+  &:hover,
+  &:focus {
+    background-color: var(--btn-hover-focus);
+    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+//480px
+
+@media screen and (min-width: 480px) {
+  .container__crawlers {
+    width: 480px;
+  }
+
+  .section__crawlers {
+    padding-bottom: 40px;
+  }
+}
+
+//0px-767px
+
+@media screen and (max-width: 767px) {
+  .section__crawlers {
+    padding-top: 60px;
+  }
+
+  .container__crawlers {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .crawlers {
+    margin-bottom: 32px;
+  }
+
+  .crawlers__item {
+    width: 280px;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .crawlers__agency {
+    margin-bottom: 20px;
+    width: 80px;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+
+  .crawlers__agency-another-background {
+    width: 130px;
+  }
+
+  .crawlers__text,
+  .crawlers__timetable {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+  }
+
+  .timetable__item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  .crawlers__item-modal-btn:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+//768px
+
+@media screen and (min-width: 768px) {
+  .section__crawlers {
+    background-image: linear-gradient(
+      to bottom,
+      var(--main-accent-color) 49%,
+      var(--secondary-accent-color) 49%,
+      var(--secondary-accent-color) 100%
+    );
+  }
+
+  .container__crawlers {
+    width: 768px;
+  }
+
+  .crawlers__item {
+    flex-basis: calc((100% - 64px) / 3);
+
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
+  }
+
+  .crawlers__city {
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+
+  .crawlers__text {
+    font-size: 14px;
+    line-height: 166%;
+  }
+
+  .timetable__day,
+  .timetable__time {
+    font-size: 14px;
+  }
+
+  .contacts__link {
+    font-size: 14px;
+    line-height: 183%;
+  }
+
+  .crawlers__list-modal-btn {
+    flex-direction: row;
+  }
+
+  .crawlers__item-modal-btn {
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+
+  .crawlers__modal-btn_background-red {
+    width: 191px;
+    padding-left: 30px;
+    padding-right: 35px;
+  }
+
+  .crawlers__modal-btn_background-white {
+    width: 174px;
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+}
+
+//1200px
+
+@media screen and (min-width: 1200px) {
+  .section__crawlers {
+    background-image: linear-gradient(
+      to bottom,
+      var(--main-accent-color) 20%,
+      var(--secondary-accent-color) 20%,
+      var(--secondary-accent-color) 100%
+    );
+    padding-bottom: 120px;
+  }
+
+  .container__crawlers {
+    width: 1200px;
+  }
+
+  .crawlers__city {
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+
+  .crawlers__text {
+    font-size: 16px;
+    line-height: 183%;
+  }
+
+  .timetable__day,
+  .timetable__time,
+  .contacts__link {
+    font-size: 16px;
+  }
+
+  .crawlers__item-modal-btn {
+    &:not(:last-child) {
+      margin-right: 12px;
+    }
+  }
+
+  .crawlers__modal-btn_background-red {
+    width: 198px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .crawlers__modal-btn_background-white {
+    width: 168px;
+    padding-left: 37px;
+    padding-right: 37px;
+  }
+}
